@@ -17,7 +17,7 @@
 }
 
 .dashboard-card-content {
-  text-align: center;
+  text-align: initial;
 }
 .mat-h1 {
   font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
@@ -27,4 +27,9 @@
 .carte {
     width: 80%;
     margin-left: 33px;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-end;
 }
