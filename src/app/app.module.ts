@@ -14,10 +14,8 @@ import { MatListModule } from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 
-
-
-
 import { RouterModule, Routes, Router } from '@angular/router';
+import { ReactiveFormsModule, FormsModule  } from '@angular/forms';
 
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { HomeComponent } from './home/home.component';
@@ -31,6 +29,8 @@ import { DishTableComponent } from './dish-table/dish-table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatInputModule, MatFormFieldModule, MatNativeDateModule, MAT_DATE_LOCALE} from '@angular/material'
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -67,9 +67,15 @@ const routes: Routes = [
     MatMenuModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [{provide: MAT_DATE_LOCALE, useValue: 'fr-FR'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
