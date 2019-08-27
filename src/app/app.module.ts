@@ -74,6 +74,7 @@ const routes: Routes = [
     MatNativeDateModule,
     MatSelectModule,
     FormsModule,
+    MatButtonModule,
     ReactiveFormsModule
   ],
   providers: [{provide: MAT_DATE_LOCALE, useValue: 'fr-FR'}],
