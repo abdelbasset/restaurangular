@@ -30,7 +30,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import { MatInputModule, MatFormFieldModule, MatNativeDateModule, MAT_DATE_LOCALE} from '@angular/material'
+import { MatInputModule, MatFormFieldModule, MatNativeDateModule, MAT_DATE_LOCALE, MatSelectModule} from '@angular/material'
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -72,6 +72,7 @@ const routes: Routes = [
     MatInputModule,
     MatFormFieldModule,
     MatNativeDateModule,
+    MatSelectModule,
     FormsModule,
     ReactiveFormsModule
   ],
