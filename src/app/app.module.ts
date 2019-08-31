@@ -23,6 +23,8 @@ import { CarteComponent } from './carte/carte.component';
 import { ReserveComponent } from './reserve/reserve.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainDashComponent } from './main-dash/main-dash.component';
+import { ScheduleComponent } from './schedule/schedule.component'
+
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { DishTableComponent } from './dish-table/dish-table.component';
@@ -30,12 +32,13 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import { MatInputModule, MatFormFieldModule, MatNativeDateModule, MAT_DATE_LOCALE, MatSelectModule} from '@angular/material'
+import { MatInputModule, MatFormFieldModule, MatNativeDateModule, MAT_DATE_LOCALE, MatSelectModule} from '@angular/material';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'carte', component: CarteComponent},
   {path: 'reserve', component: ReserveComponent},
+  {path: 'schedule', component: ScheduleComponent},
   {path: 'contact', component: ContactComponent},
 
 ]
@@ -48,7 +51,8 @@ const routes: Routes = [
     ReserveComponent,
     ContactComponent,
     MainDashComponent,
-    DishTableComponent
+    DishTableComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,
