@@ -26,6 +26,8 @@ import { ReserveComponent } from './reserve/reserve.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainDashComponent } from './main-dash/main-dash.component';
 import { ScheduleComponent } from './schedule/schedule.component'
+import { PhoneComponent } from './phone/phone.component';
+
 
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
@@ -35,7 +37,6 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatInputModule, MatFormFieldModule, MatNativeDateModule, MAT_DATE_LOCALE, MatSelectModule} from '@angular/material';
-import { from } from 'rxjs';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -55,7 +56,8 @@ const routes: Routes = [
     ContactComponent,
     MainDashComponent,
     DishTableComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    PhoneComponent
   ],
   imports: [
     BrowserModule,
